@@ -1,6 +1,6 @@
 ---
 
-title: Classification
+title: Binary classification
 
 layout: default
 
