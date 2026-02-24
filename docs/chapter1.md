@@ -106,6 +106,8 @@ Precision is the number of TPs out of all positive predictions. Precision counts
 
 <img width="116" height="17" alt="pp" src="https://github.com/user-attachments/assets/3a374998-58ef-415c-ace2-9b4a3496124c" />
 
+Wrong rejection is a miss for example, a legit user is incorrectly rejected by a system as a fraud. Wrong acceptance is false alarm that is, a fraud is incorrectly accepted by the system as legit. 
+
 Recall is the number of TPs out of all positive actuals. It is called sensitivity or true positive rate (TPR) too. Recall counts how many classifications are true. It is thus a measure of quantity. 
 
 <img width="112" height="25" alt="rr" src="https://github.com/user-attachments/assets/691ba0db-06c1-4cff-b851-f1a343190805" />
