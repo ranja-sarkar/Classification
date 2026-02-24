@@ -154,13 +154,13 @@ Accuracy alone is not too informative about the effectiveness of a classifier mo
 <img width="445" height="167" alt="auc2" src="https://github.com/user-attachments/assets/5fe1adb0-6df8-4fee-b727-2bfeb5f51f2f" />
 
 
-It can be misleading for imbalanced data where the probability or classification threshold shifts. For balanced data, this threshold value is 0.5. The accuracy metric can only be correct for imbalanced data (like in fraud detection or churn prediction cases) if the threshold is tuned properly while training the model. 
+It can be misleading for imbalanced data, wherein the probability or classification threshold shifts. This threshold value is 0.5 for balanced data. The accuracy metric can be a good enough measure for imbalanced data (like in fraud detection or churn prediction cases) if the classification threshold is tuned properly while training the model. 
 
 # Summary
 
-We know by now that recall is completeness and precision is exactness of the classifier model, and that how essential it is to correctly choose the metrics to evaluate the classifier model.  
+We know by now that recall is completeness and precision is exactness of the classifier model, and that how essential it is to correctly choose the metrics for evaluation of the classifier model.  
 
-There are costs associated with Type I & Type II errors and in most business contexts, the latter (failing to detect a true effect) is considered to be more severe as it may lead to damaging consequences, as the former (detecting a false effect) can be mitigated in short-term. Different types of mis-classifications incur different costs. 
+There are costs associated with Type I (detecting a false effect)  and Type II (failing to detect a true effect) errors and in most business contexts, the latter is considered to be more severe as it may lead to damaging consequences, and the former  can be mitigated in short-term. Different types of mis-classifications incur different costs. 
 
-When different misclassification costs are assigned to different classes, it can skew probability estimates of a classifier, which may adjust its decision boundary to minimize overall cost. This can potentially lead to uncalibrated probability estimates/predictions. Hence, prediction confidence is as important as the (point) prediction itself. Cost-sensitive learning is when the model (e.g. logistic regression) is trained with a cost function that assigns a higher cost to misclassifying the minority class.
+When different misclassification costs are assigned to different classes, it can skew probability estimates of a classifier model, which may adjust its decision boundary to minimize overall cost. This can potentially lead to uncalibrated predictions of categories. Hence, prediction confidence is as important as the (point) prediction itself. Cost-sensitive learning is when the model (e.g. logistic regression) is trained with a cost function that assigns a higher cost to misclassifying the minority class. 
  
