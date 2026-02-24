@@ -124,6 +124,9 @@ Each classification result from the confusion matrix represents one point in the
 
 Higher the TPR (power), higher is the chance of detecting a false alarm. However, the ROC curve does not yield the model precision. 
 
+<img width="326" height="293" alt="roc-auc" src="https://github.com/user-attachments/assets/a32d916b-a6d9-413c-a736-efe4aeee770f" />
+
+
 An ROC analysis helps select optimal models and discard suboptimal ones independently from the class distribution.  
 
 ### F1-score
@@ -144,3 +147,10 @@ The accuracy metric is the percentage of correct predictions that is, number of 
 Accuracy alone is not too informative about the effectiveness of a classifier model. It can be misleading for imbalanced data where the probability or classification threshold shifts. For balanced data, this threshold value is 0.5. The accuracy metric can only be correct for imbalanced data (like in fraud detection or churn prediction cases) if the threshold is tuned properly while training the model. 
 
 # Summary
+
+We know by now that recall is completeness and precision is exactness of the classifier model, and that how essential it is to correctly choose the metrics to evaluate predictions or outcome of the model.  
+
+There are costs associated with Type I & Type II errors and in most business contexts, the latter (failing to detect a true effect) is considered to be more severe as it may lead to damaging consequences, as the former (detecting a false effect) can be mitigated in short-term. Different types of mis-classifications incur different costs. 
+
+When different misclassification costs are assigned to different classes, it can skew probability estimates of a classifier, which may adjust its decision boundary to minimize overall cost. This can potentially lead to uncalibrated probability estimates/predictions. Hence, prediction confidence is as important as the (point) prediction itself. Cost-sensitive learning is when the model (e.g. logistic regression) is trained with a cost function that assigns a higher cost to misclassifying the minority class.
+ 
