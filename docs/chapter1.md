@@ -118,7 +118,7 @@ In a churn prediction model recall is more important, for awareness of potential
 
 The ROC (receiver operating characteristics) curve is a plot of power (TPR) as a function of false positive rate (FPR), when model performance at varying threshold values is calculated from the sample. 
 
-Each classification result from the confusion matrix represents one point in the ROC space. ROC is the recall.
+Each classification result from the confusion matrix represents one point in the ROC space. ROC is the recall. Specificity of the classifier model is defined as TNR that is, TN/(TN+FP). So ROC is Sensitivity versus (1-specificity). 
 
 <img width="490" height="388" alt="roc" src="https://github.com/user-attachments/assets/a488b0b2-80ab-4cb4-8882-1e89f5ec8a7d" />
 
@@ -133,11 +133,14 @@ This score is a harmonic mean of recall and precision and manages the trade-off 
 <img width="366" height="41" alt="f1" src="https://github.com/user-attachments/assets/73296b8c-6cf8-42c7-80fe-438aa70671e0" />
 
 
-It is most worthwhile to choose a metric based on the business problem we are solving because there are always trade-offs. The selection must be based on how much trade-off the business allows. Detection (or not) of a true effect is related in a natural way to the cost analysis of diagnostic decision-making.
+It is most worthwhile to choose a metric based on the business problem we are solving because there are always trade-offs. The metric selection must be based on how much trade-off the business allows. Detection (or not) of a true effect is related in a natural way to the cost analysis of diagnostic decision-making.
 
 ### Accuracy
 
-The accuracy metric is the percentage of correct predictions that is, number of correct predictions out of all predictions. Accuracy alone is not too informative about the effectiveness of a classifier model, it can be misleading for imbalanced data.
+The accuracy metric is the percentage of correct predictions that is, number of correct predictions out of all predictions.
 
 <img width="181" height="29" alt="aa" src="https://github.com/user-attachments/assets/19e2a43f-6654-4b4e-ab80-516751e0a65e" />
 
+Accuracy alone is not too informative about the effectiveness of a classifier model. It can be misleading for imbalanced data where the probability or classification threshold shifts. For balanced data, this threshold value is 0.5. The accuracy metric can only be correct for imbalanced data (like in fraud detection or churn prediction cases) if the threshold is tuned properly while training the model. 
+
+# Summary
