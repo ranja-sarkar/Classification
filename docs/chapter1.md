@@ -61,15 +61,18 @@ In a hypothesis test, making the wrong decision (false alarm) is the significanc
 
 The p-value indicates the strength of evidence against the null hypothesis, smaller p-value indicates stronger evidence. To accept alternative hypothesis, the p-value must be lower than alpha, meaning there is an effect 95 out of 100 times if alpha = 0.05. To accept the null, the p-value must be larger than alpha; if alpha is 5% and confidence level is 0.95 (95%), it means there is no effect 95 times out of 100. 
 
-Confidence interval of a test is a window of values constructed using significance level and confidence level. Size of the confidence interval for a given confidence level is determined by few factors.
+Confidence interval of a test is a window/range of values constructed using significance level and confidence level. Size of the confidence interval for a given confidence level is determined by few factors.
 
 1.	*sample size*
-   Larger the sample size, more certain you’re of the results reflecting the population and hence, smaller is the confidence interval however, the relationship is not linear.
 
-2.	*percentage of sample*
+  	Larger the sample size, more certain you’re of the results reflecting the population; smaller is the confidence interval however, the relationship between sampe size and confidence interval is not linear.
+
+3.	*percentage of sample*
+   
    The accuracy of results truly reflecting the population depends on the percentage of sample that picks a particular result. This is related to the margin of error. For a given accuracy, one has to determine the percentage of sample and vice versa.
 
-3.	*population size*
-   This is most of the times unavailable, hence an appropriate sample becomes essential.
+5.	*population size*
+   
+   This is most of the times unavailable, hence an appropriate sample size becomes essential.
 
 
