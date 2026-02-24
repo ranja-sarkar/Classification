@@ -124,7 +124,8 @@ Each classification result from the confusion matrix represents one point in the
 
 Higher the TPR (power), higher is the chance of detecting a false alarm. However, the ROC curve does not yield the model precision. The diagonal divides the ROC space. Points above the diagonal represent good classification results (better than random); points below the line represent bad results (worse than random).
 
-<img width="326" height="293" alt="roc-auc" src="https://github.com/user-attachments/assets/a32d916b-a6d9-413c-a736-efe4aeee770f" />
+<img width="425" height="363" alt="rr-aa" src="https://github.com/user-attachments/assets/017c8810-cb9c-4f4a-ab28-d72f2f9b2e90" />
+
 
 Area under the curve is AUC, the ROC-AUC summarizes sensitivity and specificity, but does not inform regarding precision. Also, two ROC curves with equal AUC may yield different outcome and interpretations.
 
@@ -147,7 +148,13 @@ The accuracy metric is the percentage of correct predictions that is, number of 
 
 <img width="181" height="29" alt="aa" src="https://github.com/user-attachments/assets/19e2a43f-6654-4b4e-ab80-516751e0a65e" />
 
-Accuracy alone is not too informative about the effectiveness of a classifier model. It can be misleading for imbalanced data where the probability or classification threshold shifts. For balanced data, this threshold value is 0.5. The accuracy metric can only be correct for imbalanced data (like in fraud detection or churn prediction cases) if the threshold is tuned properly while training the model. 
+Accuracy alone is not too informative about the effectiveness of a classifier model. 
+
+<img width="443" height="196" alt="auc1" src="https://github.com/user-attachments/assets/81aa8402-c3b8-4907-956f-9b204d46ddc0" />
+<img width="445" height="167" alt="auc2" src="https://github.com/user-attachments/assets/5fe1adb0-6df8-4fee-b727-2bfeb5f51f2f" />
+
+
+It can be misleading for imbalanced data where the probability or classification threshold shifts. For balanced data, this threshold value is 0.5. The accuracy metric can only be correct for imbalanced data (like in fraud detection or churn prediction cases) if the threshold is tuned properly while training the model. 
 
 # Summary
 
