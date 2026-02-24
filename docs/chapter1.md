@@ -98,17 +98,17 @@ A false alarm is Type I error, and a miss (false negative) is Type II error. A f
 
 ## Evaluation Metrics
 
-We discuss the metrics defined to assess classifiers or classification models.
+We discuss the metrics defined to assess classifiers or classification models. 
 
 ### Precision and Recall
 
-Precision is the number of TPs out of all positive predictions.
+Precision is the number of TPs out of all positive predictions. Precision counts how many classifications are relevant. A measure of classifier quality is the precision. In a fraud prediction model precision is more important, as incorrectly accusing a legit transaction while trying to catch a fraudulent transaction has damaging consequence on the customer. Precision ensures we’re not misclassifying too many legit transactions. 
 
 <img width="116" height="17" alt="pp" src="https://github.com/user-attachments/assets/3a374998-58ef-415c-ace2-9b4a3496124c" />
 
-Recall is the number of TPs out of all positive actuals. It is called sensitivity or true positive rate (TPR) too. 
+Recall is the number of TPs out of all positive actuals. It is called sensitivity or true positive rate (TPR) too. Recall counts how many classifications are true. It is thus a measure of quantity. 
 
 <img width="112" height="25" alt="rr" src="https://github.com/user-attachments/assets/691ba0db-06c1-4cff-b851-f1a343190805" />
 
-
+In a churn prediction model recall is more important, for awareness of potential churners. Recall ensures we’re not overlooking actual churners.
 
