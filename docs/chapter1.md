@@ -58,7 +58,7 @@ Having discussed effect and effect sizes, it is mentionworthy that the practical
 
 In the world of data, a common pitfall is the confusion between statistical significance and practical significance. Statistical significance is the likelihood that a test result is not random (due to chance), determined by a threshold or p-value. Practical significance, on the other hand considers whether the difference or effect size is large enough to be meaningful and relevant in a real-world context. 
 
-In a hypothesis test, making the wrong decision (false alarm) is the significance level or alpha. The significance level represents the level of evidence for rejecting the null hypothesis. It is a Type I error.
+In a hypothesis test, making the wrong decision (false alarm) is the significance level or alpha. The significance level represents the level of evidence for rejecting the null hypothesis. It is a Type I error. The probability of making a Type II error is beta. 
 
 The p-value indicates the strength of evidence against the null hypothesis, smaller p-value indicates stronger evidence. To accept alternative hypothesis, the p-value must be lower than alpha, meaning there is an effect 95 out of 100 times if alpha = 0.05. To accept the null, the p-value must be larger than alpha; if alpha is 5% and confidence level is 0.95 (95%), it means there is no effect 95 times out of 100. 
 
@@ -79,6 +79,7 @@ This is most of the times unavailable, hence an appropriate sample size becomes 
 Let us consider an example to understand statistical significance and practical significance better. Assume a company selling a product is testing the effectiveness of two different marketing campaigns or strategies for the product. Group 1 of customers receives Marketing Strategy A, and Group 2 receives Marketing Strategy B. After 4 weeks, the average purchase amounts in both groups are recorded.
 
 ➡ Group 1 (Marketing Strategy A): Mean purchase amount : $100.00
+
 ➡ Group 2 (Marketing Strategy B): Mean purchase amount : $100.25
 
 We also find that the p-value (test statistic) turns out to be extremely low, suggesting that the observed difference in purchase amounts is statistically significant and unlikely due to random chance.
@@ -87,6 +88,11 @@ However, an average increase of $0.25 in customer spending may not be meaningful
 
 # Evaluating classifiers
 
+Let us consider an example of diagnosis of a pregnant woman, whether she is pregnant or not. Actual values can be true (she's pregnant) and false (she's not pregnant). 
 
+Predicted values can also be 1 (she's pregnant) and 0 (she's not pregnant). So the confusion matrix of outcome yields the four categories of results shown below.
 
+<img width="407" height="251" alt="class" src="https://github.com/user-attachments/assets/5556f5d2-4e89-4e04-b234-148f8c6e5f86" />
+
+A false alarm is Type I error, and a miss (false negative) is Type II error. A false alarm (FP) is positive prediction when it is actually false. A miss (FN) is negative prediction when it is actually true, that is you miss the right signal. 
 
