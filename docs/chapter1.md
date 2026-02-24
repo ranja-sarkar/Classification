@@ -2,6 +2,8 @@
 
 title: Binary classification
 
+description: Binary classification
+
 layout: default
 
 nav_order: 2
