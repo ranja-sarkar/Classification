@@ -122,18 +122,15 @@ Each classification result from the confusion matrix represents one point in the
 
 <img width="490" height="388" alt="roc" src="https://github.com/user-attachments/assets/a488b0b2-80ab-4cb4-8882-1e89f5ec8a7d" />
 
-Higher the TPR (power), higher is the chance of detecting a false alarm. However, the ROC curve does not yield the model precision. 
+Higher the TPR (power), higher is the chance of detecting a false alarm. However, the ROC curve does not yield the model precision. The diagonal divides the ROC space. Points above the diagonal represent good classification results (better than random); points below the line represent bad results (worse than random).
 
 <img width="326" height="293" alt="roc-auc" src="https://github.com/user-attachments/assets/a32d916b-a6d9-413c-a736-efe4aeee770f" />
 
-The diagonal divides the ROC space. Points above the diagonal represent good classification results (better than random); points below the line represent bad results (worse than random). Area under the curve is AUC, ROC-AUC summarizes sensitivity and specificity, but does not inform regarding precision.
-
-Also, two ROC curves with equal AUC may yield different outcome and interpretations.
-
+Area under the curve is AUC, the ROC-AUC summarizes sensitivity and specificity, but does not inform regarding precision. Also, two ROC curves with equal AUC may yield different outcome and interpretations.
 
 ![auc](https://github.com/user-attachments/assets/71867635-e53e-4bb7-b30c-92c0911eaf17)
 
-An ROC analysis helps select optimal models and discard suboptimal ones independently from the class distribution.  
+An ROC analysis however helps select optimal models and discard suboptimal ones independently from the class distribution.  
 
 ### F1-score
 
@@ -154,7 +151,7 @@ Accuracy alone is not too informative about the effectiveness of a classifier mo
 
 # Summary
 
-We know by now that recall is completeness and precision is exactness of the classifier model, and that how essential it is to correctly choose the metrics to evaluate predictions or outcome of the model.  
+We know by now that recall is completeness and precision is exactness of the classifier model, and that how essential it is to correctly choose the metrics to evaluate the classifier model.  
 
 There are costs associated with Type I & Type II errors and in most business contexts, the latter (failing to detect a true effect) is considered to be more severe as it may lead to damaging consequences, as the former (detecting a false effect) can be mitigated in short-term. Different types of mis-classifications incur different costs. 
 
