@@ -108,9 +108,16 @@ Precision is the number of TPs out of all positive predictions. Precision counts
 
 Wrong rejection is a miss for example, a legit user is incorrectly rejected by a system as a fraud. Wrong acceptance is false alarm that is, a fraud is incorrectly accepted by the system as legit. 
 
-Recall is the number of TPs out of all positive actuals. It is called sensitivity or true positive rate (TPR) too. Recall counts how many classifications are true. It is thus a measure of quantity. 
+Recall is the number of TPs out of all positive actuals. It is called sensitivity too. Recall counts how many classifications are true. It is thus a measure of quantity. 
 
 <img width="112" height="25" alt="rr" src="https://github.com/user-attachments/assets/691ba0db-06c1-4cff-b851-f1a343190805" />
 
 In a churn prediction model recall is more important, for awareness of potential churners. Recall ensures we’re not overlooking actual churners.
 
+### ROC curve
+
+The ROC (receiver operating characteristics) curve is a plot of power (TPR) as a function of false positive rate (FPR), when model performance at varying threshold values is calculated from the sample. 
+
+Each classification result from the confusion matrix represents one point in the ROC space. 
+
+<img width="490" height="388" alt="roc" src="https://github.com/user-attachments/assets/a488b0b2-80ab-4cb4-8882-1e89f5ec8a7d" />
