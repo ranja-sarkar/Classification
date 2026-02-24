@@ -23,16 +23,16 @@ The power of a test is the probability that the test correctly rejects the null 
 
 <img width="319" height="278" alt="power" src="https://github.com/user-attachments/assets/5c135105-2ada-4861-b9ac-df5c2640f0f1" />
 
-Collecting complete information about a population is time-consuming and expensive, and sometimes not even possible. We need an appropriate sample size to infer about the population; in other words, we require a representative sample. Selecting a sample size to make a machine learn correctly, in other words to train an optimal model is a little tricky. There is typically a relationship between training data-size and model performance. However, for some model algorithms and datasets, such a relation might not exist at all. 
+Collecting complete information about a population is time-consuming and expensive, and sometimes not even possible. We need an appropriate sample size to infer about the population; in other words, we require a representative sample. Selecting a sample size to make a machine learn correctly, in other words to train an optimal model is a little tricky. There is typically a relationship between training datasize and model performance. However, for some model algorithms and datasets, such a relation might not exist at all. 
 
-Power analysis helps estimate the minimum sample size required to detect an effect in a statistical test. A hypothesis test which is a design-based approach figures out if an effect (small or not) is statistically significant to make us decide to change our minds on an action. The approach of calculating the sample size is based on effect size (es) of the test. 
+Power analysis helps estimate the minimum sample size required to detect an effect in a statistical test. A power curve yields the power of a test, which is power versus sample size for a given effect size. A hypothesis test which is a design-based approach figures out if an effect (small or not) is statistically significant to make us decide to change our minds on an action. The approach of calculating the sample size is based on effect size (es) of the test. 
 
 <img width="374" height="299" alt="ss" src="https://github.com/user-attachments/assets/9289401d-2557-4588-ba55-a83e323abc61" />
 
 
 We can estimate a sample size given the significance level denoted by alpha and power which is the probability of rejecting null hypothesis. It has been observed that larger sample sizes have the capability to detect small effects. 
 
-We need enough evidence or sample size to perform a test, and the test statistic or metric resulting out of it is the p-value. If p-value is below a critical value (alpha), the null hypothesis is rejected and the default action is changed. This is the ‘frequentist’ approach which essentially tells us that there’s a default action and with each evidence or datapoint we either do not change our mind (null) or we do (alternative hypothesis). 
+We need enough evidence or sample size to perform a test, and the test statistic (metric) resulting out of it is called the probability value or p-value. If p-value is below a critical value (alpha), the null hypothesis is rejected and the default action is changed. This is the ‘frequentist’ approach which essentially tells us that there’s a default action and with each evidence or datapoint we either do not change our mind (null) or we do (alternative hypothesis). 
 
 # Sensitivity
 
@@ -42,5 +42,34 @@ It is noteworthy at this point that I mentioned earlier hypothesis testing is a 
 
 Coming back to sensitivity, it provides an approach to quantify the relationship between model performance and data (consumed by the model) for a given problem. Datasets may be too small to effectively capture the capability of a predictive model or too large where data augmentation might not improve model performance. A learning curve yields the sensitivity of the model, which is model performance versus data size. It tells how sensitive the model is to the size of data used for training.
 
+There might exist an upper bound on the datasize for a given dataset and model algorithm, beyond which there's no change (saturation) in estimated performance of the model.  
+Please note that expanding data vertically means increasing the number of training examples (rows), which is datasize. Expanding data horizontally means increasing the number of features/variables (columns) in tabular data, which is data volume. 
+
+We cannot assume adding more datapoints would lead to better performance of the model. There are two forces at play here viz., how well the model fits the data, and how reliably the fit generalizes and extends to unseen data. 
+
+-----
+
+Having discussed effect and effect sizes, it is mentionworthy that the practical significance of effect sizes can only be judged with respect to the context or problem at  hand. In some cases, “small” effects are practically significant and in some other, “large” effects are not that is, they are not significantly meaningful wrt the context. 
+
+# Statistical significance *vs* Practical significance
+
+In the world of data, a common pitfall is the confusion between statistical significance and practical significance. 
+
+Statistical significance is the likelihood that a test result is not random (due to chance), determined by a threshold or p-value. Practical significance, on the other hand considers whether the difference or effect size is large enough to be meaningful and relevant in a real-world context. 
+
+In a hypothesis test, making the wrong decision (false alarm) is the significance level or alpha. The significance level represents the level of evidence for rejecting the null hypothesis. It is a Type I error.
+
+The p-value indicates the strength of evidence against the null hypothesis, smaller p-value indicates stronger evidence. To accept alternative hypothesis, the p-value must be lower than alpha, meaning there is an effect 95 out of 100 times if alpha = 0.05. To accept the null, the p-value must be larger than alpha; if alpha is 5% and confidence level is 0.95 (95%), it means there is no effect 95 times out of 100. 
+
+Confidence interval of a test is a window of values constructed using significance level and confidence level. Size of the confidence interval for a given confidence level is determined by few factors.
+
+1.	*sample size*
+   Larger the sample size, more certain you’re of the results reflecting the population and hence, smaller is the confidence interval however, the relationship is not linear.
+
+2.	*percentage of sample*
+   The accuracy of results truly reflecting the population depends on the percentage of sample that picks a particular result. This is related to the margin of error. For a given accuracy, one has to determine the percentage of sample and vice versa.
+
+3.	*population size*
+   This is most of the times unavailable, hence an appropriate sample becomes essential.
 
 
