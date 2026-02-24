@@ -96,3 +96,6 @@ Predicted values can also be 1 (she's pregnant) and 0 (she's not pregnant). So t
 
 A false alarm is Type I error, and a miss (false negative) is Type II error. A false alarm (FP) is positive prediction when it is actually false. A miss (FN) is negative prediction when it is actually true, that is you miss the right signal. 
 
+## Evaluation Metrics
+
+
