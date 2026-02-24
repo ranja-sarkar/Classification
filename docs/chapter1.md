@@ -64,16 +64,29 @@ The p-value indicates the strength of evidence against the null hypothesis, smal
 
 Confidence interval of a test is a window/range of values constructed using significance level and confidence level. Size of the confidence interval for a given confidence level is determined by few factors.
 
-1.	*sample size*
+a.	*sample size*
    
 Larger the sample size, more certain you’re of the results reflecting the population; smaller is the confidence interval however, the relationship between sampe size and confidence interval is not linear.
 
-2.	*percentage of sample*
+b.	*percentage of sample*
    
 The accuracy of results truly reflecting the population depends on the percentage of sample that picks a particular result. This is related to the margin of error. For a given accuracy, one has to determine the percentage of sample and vice versa.
 
-3.	*population size*
+c.	*population size*
    
 This is most of the times unavailable, hence an appropriate sample size becomes essential.
+
+Let us consider an example to understand statistical significance and practical significance better. Assume a company selling a product is testing the effectiveness of two different marketing campaigns or strategies for the product. Group 1 of customers receives Marketing Strategy A, and Group 2 receives Marketing Strategy B. After 4 weeks, the average purchase amounts in both groups are recorded.
+
+➡ Group 1 (Marketing Strategy A): Mean purchase amount : $100.00
+➡ Group 2 (Marketing Strategy B): Mean purchase amount : $100.25
+
+We also find that the p-value (test statistic) turns out to be extremely low, suggesting that the observed difference in purchase amounts is statistically significant and unlikely due to random chance.
+
+However, an average increase of $0.25 in customer spending may not be meaningful in practical terms to justify a change in marketing strategy, although the difference in purchase amounts ($0.25) is statistically significant resulting out of the test. It therefore becomes essential to assess both statistical and practical significances to make informed and effective business decisions. 
+
+# Evaluating classifiers
+
+
 
 
