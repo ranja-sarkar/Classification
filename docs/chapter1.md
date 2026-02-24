@@ -98,4 +98,17 @@ A false alarm is Type I error, and a miss (false negative) is Type II error. A f
 
 ## Evaluation Metrics
 
+We discuss the metrics defined to assess classifiers or classification models.
+
+### Precision and Recall
+
+Precision is the number of TPs out of all positive predictions.
+
+<img width="116" height="17" alt="pp" src="https://github.com/user-attachments/assets/3a374998-58ef-415c-ace2-9b4a3496124c" />
+
+Recall is the number of TPs out of all positive actuals. It is called sensitivity or true positive rate (TPR) too. 
+
+<img width="112" height="25" alt="rr" src="https://github.com/user-attachments/assets/691ba0db-06c1-4cff-b851-f1a343190805" />
+
+
 
