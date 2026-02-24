@@ -30,8 +30,17 @@ Power analysis helps estimate the minimum sample size required to detect an effe
 <img width="374" height="299" alt="ss" src="https://github.com/user-attachments/assets/9289401d-2557-4588-ba55-a83e323abc61" />
 
 
-We can estimate a sample size given the significance level (alpha) and power which is the probability of rejecting null hypothesis or of detection of an effect.
-It has been observed that larger sample sizes have the capability to detect small effects. 
-We need enough evidence or sample size to perform a test, and the test statistic or metric resulting out of it is the p-value. If p-value is below a critical value (significance level), the null hypothesis is rejected and the default action is changed. This is the ‘frequentist’ approach which essentially tells us that there’s a default action and with each evidence or datapoint we either do not change our mind (null) or we do (alternative hypothesis). 
+We can estimate a sample size given the significance level denoted by alpha and power which is the probability of rejecting null hypothesis. It has been observed that larger sample sizes have the capability to detect small effects. 
+
+We need enough evidence or sample size to perform a test, and the test statistic or metric resulting out of it is the p-value. If p-value is below a critical value (alpha), the null hypothesis is rejected and the default action is changed. This is the ‘frequentist’ approach which essentially tells us that there’s a default action and with each evidence or datapoint we either do not change our mind (null) or we do (alternative hypothesis). 
+
+# Sensitivity
+
+Sensitivity analysis forms the basis of testing different (model) algorithms and their configurations, with the sample (train data) size. By algorithm configuration, I mean statistical heuristics such as number of labels in the (labelled) dataset, number of input features, number of hyperparameters, etc. This helps in evaluating an algorithm for a task and estimating the sample size needed to build an optimally performing predictive model. 
+
+It is noteworthy at this point that I mentioned earlier hypothesis testing is a design-based approach, while machine learning is a model-based approach, both are statistical approaches with different treatments.
+
+Coming back to sensitivity, it provides an approach to quantify the relationship between model performance and sample data size for a given problem. Datasets may be too small to effectively capture the capability of a predictive model or too large where data augmentation might not improve model performance. A learning curve yields the sensitivity of the model, which is model performance versus data size.
+
 
 
