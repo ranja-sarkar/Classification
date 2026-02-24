@@ -40,7 +40,7 @@ Sensitivity analysis forms the basis of testing different (model) algorithms and
 
 It is noteworthy at this point that I mentioned earlier hypothesis testing is a design-based approach, while machine learning is a model-based approach, both are statistical approaches with different treatments.
 
-Coming back to sensitivity, it provides an approach to quantify the relationship between model performance and sample data size for a given problem. Datasets may be too small to effectively capture the capability of a predictive model or too large where data augmentation might not improve model performance. A learning curve yields the sensitivity of the model, which is model performance versus data size.
+Coming back to sensitivity, it provides an approach to quantify the relationship between model performance and data (consumed by the model) for a given problem. Datasets may be too small to effectively capture the capability of a predictive model or too large where data augmentation might not improve model performance. A learning curve yields the sensitivity of the model, which is model performance versus data size. It tells how sensitive the model is to the size of data used for training.
 
 
 
