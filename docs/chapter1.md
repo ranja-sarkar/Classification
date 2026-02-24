@@ -118,7 +118,7 @@ In a churn prediction model recall is more important, for awareness of potential
 
 The ROC (receiver operating characteristics) curve is a plot of power (TPR) as a function of false positive rate (FPR), when model performance at varying threshold values is calculated from the sample. 
 
-Each classification result from the confusion matrix represents one point in the ROC space. ROC is the recall. Specificity of the classifier model is defined as TNR that is, TN/(TN+FP). So ROC is Sensitivity versus (1-specificity). 
+Each classification result from the confusion matrix represents one point in the ROC space. ROC is the recall. Specificity of the classifier model is defined as TNR that is, TN/(TN+FP). So ROC is sensitivity versus (1-specificity). 
 
 <img width="490" height="388" alt="roc" src="https://github.com/user-attachments/assets/a488b0b2-80ab-4cb4-8882-1e89f5ec8a7d" />
 
@@ -126,6 +126,12 @@ Higher the TPR (power), higher is the chance of detecting a false alarm. However
 
 <img width="326" height="293" alt="roc-auc" src="https://github.com/user-attachments/assets/a32d916b-a6d9-413c-a736-efe4aeee770f" />
 
+The diagonal divides the ROC space. Points above the diagonal represent good classification results (better than random); points below the line represent bad results (worse than random). Area under the curve is AUC, ROC-AUC summarizes sensitivity and specificity, but does not inform regarding precision.
+
+Also, two ROC curves with equal AUC may yield different outcome and interpretations.
+
+
+![auc](https://github.com/user-attachments/assets/71867635-e53e-4bb7-b30c-92c0911eaf17)
 
 An ROC analysis helps select optimal models and discard suboptimal ones independently from the class distribution.  
 
