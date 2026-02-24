@@ -130,10 +130,14 @@ An ROC analysis helps select optimal models and discard suboptimal ones independ
 
 This score is a harmonic mean of recall and precision and manages the trade-off between quantity and quality of classifications. 
 
+<img width="366" height="41" alt="f1" src="https://github.com/user-attachments/assets/73296b8c-6cf8-42c7-80fe-438aa70671e0" />
+
+
 It is most worthwhile to choose a metric based on the business problem we are solving because there are always trade-offs. The selection must be based on how much trade-off the business allows. Detection (or not) of a true effect is related in a natural way to the cost analysis of diagnostic decision-making.
 
 ### Accuracy
 
 The accuracy metric is the percentage of correct predictions that is, number of correct predictions out of all predictions. Accuracy alone is not too informative about the effectiveness of a classifier model, it can be misleading for imbalanced data.
 
+<img width="181" height="29" alt="aa" src="https://github.com/user-attachments/assets/19e2a43f-6654-4b4e-ab80-516751e0a65e" />
 
