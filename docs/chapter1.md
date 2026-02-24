@@ -135,10 +135,9 @@ An ROC analysis however helps select optimal models and discard suboptimal ones 
 
 ### F1-score
 
-This score is a harmonic mean of recall and precision and manages the trade-off between quantity and quality of classifications. 
+This score is a harmonic mean of recall and precision and manages the trade-off between quantity and quality of classifications.  Using a harmonic mean ensures that if either precision or recall is low, then the F1 score drops significantly for the classifier.
 
 <img width="366" height="41" alt="f1" src="https://github.com/user-attachments/assets/73296b8c-6cf8-42c7-80fe-438aa70671e0" />
-
 
 It is most worthwhile to choose a metric based on the business problem we are solving because there are always trade-offs. The metric selection must be based on how much trade-off the business allows. Detection (or not) of a true effect is related in a natural way to the cost analysis of diagnostic decision-making.
 
