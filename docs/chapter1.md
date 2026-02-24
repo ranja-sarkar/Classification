@@ -15,6 +15,8 @@ parent: Overview
 
 Statistical tests use a data sample to assess and make an inference about a population from which the sample is drawn. In a two-sample comparison, the goal often is to assess whether the means of some attribute obtained for individuals in the two samples (sub-populations) differ. Statistical power (simply power) is the probability of detection of an effect, quantified by a size called effect size, in other words the probability that the test will find a statistically significant difference between that attribute in the samples. When there exists an actual effect, the power of a test represents the chances of effect detection.
 
+Selecting a sample size to make a machine learn correctly, in other words to train an optimal model is a little tricky. There is a typical relationship between training datasize and model performance. However, for some model algorithms and datasets, such a relation might not exist at all. 
+
 # Power
 
 Power depends on a number of factors for effect detection, few of which pertain to a specific testing situation. The ones power almost always depends on are significance level used in the test, magnitude of the effect-of-interest (effect of size), and size of the sample. Power versus sample size yields the power curve which tells us how adequate the size is to detect a significant effect in a test (experiment) or randomized controlled trial (RCT).
@@ -24,8 +26,6 @@ The power of a test is the probability that the test correctly rejects the null 
 <img width="319" height="278" alt="power" src="https://github.com/user-attachments/assets/5c135105-2ada-4861-b9ac-df5c2640f0f1" />
 
 Collecting complete information about a population is time-consuming and expensive, and sometimes not even possible. We need an appropriate sample size to infer about the population; in other words, we require a representative sample. 
-
-Selecting a sample size to make a machine learn correctly, in other words to train an optimal model is a little tricky. There is typically a relationship between training datasize and model performance. However, for some model algorithms and datasets, such a relation might not exist at all. 
 
 Power analysis helps estimate the minimum sample size required to detect an effect in a statistical test. A power curve yields the power of a test, which is power versus sample size for a given effect size. A hypothesis test which is a design-based approach figures out if an effect (small or not) is statistically significant to make us decide to change our minds on an action. The approach of calculating the sample size is based on effect size (es) of the test. 
 
