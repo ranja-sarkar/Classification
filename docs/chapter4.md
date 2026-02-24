@@ -1,8 +1,8 @@
 ---
 
-title: Calibrating classification
+title: Calibrating classifier
 
-decsription: 
+decsription: Calibrating classifier
 
 layout: default
 
