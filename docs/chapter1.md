@@ -98,7 +98,7 @@ A false alarm is Type I error, and a miss (false negative) is Type II error. A f
 
 ## Evaluation Metrics
 
-We discuss the metrics defined to assess classifiers or classification models. 
+We discuss the metrics defined to assess or evaluate classification models. 
 
 ### Precision and Recall
 
