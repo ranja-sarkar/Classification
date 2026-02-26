@@ -112,7 +112,27 @@ Recall is the number of TPs out of all positive actuals. It is called sensitivit
 
 <img width="112" height="25" alt="rr" src="https://github.com/user-attachments/assets/691ba0db-06c1-4cff-b851-f1a343190805" />
 
-In a churn prediction model recall is more important, for awareness of potential churners. Recall ensures we’re not overlooking actual churners.
+In a churn prediction model recall is more important, for awareness of potential churners. Recall ensures we’re not overlooking actual churners. 
+
+### F1-score
+
+This score is a harmonic mean of recall and precision and manages the trade-off between quantity and quality of classifications.  Using a harmonic mean ensures that if either precision or recall is low, then the F1 score drops significantly for the classifier.
+
+<img width="366" height="41" alt="f1" src="https://github.com/user-attachments/assets/73296b8c-6cf8-42c7-80fe-438aa70671e0" />
+
+It is most worthwhile to choose a metric based on the business problem we are solving because there are always trade-offs. The metric selection must be based on how much trade-off the business allows. Detection (or not) of a true effect is related in a natural way to the cost analysis of diagnostic decision-making.
+
+---
+
+A little know-how in here would be comprehending that upon introduction of an exponent in the mathematical expression of 'mean' making it a 'generalized mean', one can arrive at an entire spectrum of 'means'. 
+
+<img width="254" height="58" alt="mm" src="https://github.com/user-attachments/assets/14c029f8-0e89-40c2-bce0-81da6a6d6a07" />
+
+For example, the exponent p=1 yields arithmetic mean and p = 2 yields root mean square or quadratic mean. We must know that numbers add up for an arithmetic mean, reciprocals of numbers add up for a harmonic mean, squares of numbers add up for a quadratic mean, and so on. 
+
+---
+
+Now let us return to our main topic 'metrics'.
 
 ### ROC curve
 
@@ -133,25 +153,6 @@ Area under the curve is AUC, the ROC-AUC summarizes sensitivity and specificity,
 
 An ROC analysis however helps select optimal models and discard suboptimal ones independently from the class distribution.  
 
-### F1-score
-
-This score is a harmonic mean of recall and precision and manages the trade-off between quantity and quality of classifications.  Using a harmonic mean ensures that if either precision or recall is low, then the F1 score drops significantly for the classifier.
-
-<img width="366" height="41" alt="f1" src="https://github.com/user-attachments/assets/73296b8c-6cf8-42c7-80fe-438aa70671e0" />
-
-It is most worthwhile to choose a metric based on the business problem we are solving because there are always trade-offs. The metric selection must be based on how much trade-off the business allows. Detection (or not) of a true effect is related in a natural way to the cost analysis of diagnostic decision-making.
-
----
-
-A little know-how in here would be to comprehend that y introducing an exponent in the mathematical expression of 'mean' making it a 'generalized mean', one can arrive at an entire spectrum of 'means'. 
-
-<img width="254" height="58" alt="mm" src="https://github.com/user-attachments/assets/14c029f8-0e89-40c2-bce0-81da6a6d6a07" />
-
-For example, the exponent p=1 yields arithmetic mean and p = 2 yields root mean square or quadratic mean. We must know that numbers add up for an arithmetic mean, reciprocals of numbers add up for a harmonic mean, squares of numbers add up for a quadratic mean, and so on. 
-
----
-
-Now let us return to our main topic 'metrics'.
 
 ### Accuracy
 
