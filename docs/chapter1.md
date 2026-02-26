@@ -147,11 +147,15 @@ Higher the TPR (power), higher is the chance of detecting a false alarm. However
 <img width="425" height="363" alt="rr-aa" src="https://github.com/user-attachments/assets/017c8810-cb9c-4f4a-ab28-d72f2f9b2e90" />
 
 
-Area under the curve is AUC, the ROC-AUC summarizes sensitivity and specificity, but does not inform regarding precision. Also, two ROC curves with equal AUC may yield different outcome and interpretations. A random classifier has AUC = 0.5 in the ROC curve.
+Area under the curve is AUC, the ROC-AUC summarizes sensitivity and specificity, but does not inform regarding precision. Also, two ROC curves with equal AUC may yield different outcomes. 
 
 ![auc](https://github.com/user-attachments/assets/71867635-e53e-4bb7-b30c-92c0911eaf17)
 
-An ROC analysis however helps select optimal models and discard suboptimal ones independently from the class distribution.  
+A random classifier has AUC = 0.5 in the ROC curve. 
+
+<img width="263" height="220" alt="pr" src="https://github.com/user-attachments/assets/6e7f04b4-c074-41ab-ab3a-d5a66d706749" />
+
+A presion-recall curve in addition to ROC curve helps for explainability. The ROC analysis helps in interpretations and selection of optimal models and discard suboptimal ones independently from the class distribution.  
 
 
 ### Accuracy
@@ -170,9 +174,7 @@ It can be misleading for imbalanced data, wherein the probability or classificat
 
 # Summary
 
-We know by now that recall is completeness and precision is exactness of the classifier model, and that how essential it is to correctly choose the metrics for evaluation of the classifier model.  
+We understand by now that recall is completeness and precision is exactness of the classification model, and that how essential it is to correctly choose the metrics for evaluation of the classifier model.  
 
-There are costs associated with Type I (detecting a false effect)  and Type II (failing to detect a true effect) errors and in most business contexts, the latter is considered to be more severe as it may lead to damaging consequences, and the former  can be mitigated in short-term. Different types of mis-classifications incur different costs. 
-
-When different misclassification costs are assigned to different classes, it can skew probability estimates of a classifier model, which may adjust its decision boundary to minimize overall cost. This can potentially lead to uncalibrated predictions of categories. Hence, prediction confidence is as important as the (point) prediction itself. Cost-sensitive learning is when the model (e.g. logistic regression) is trained with a cost function that assigns a higher cost to misclassifying the minority class. 
+There are costs associated with Type I (detecting a false effect)  and Type II (failing to detect a true effect) errors and in most business contexts, the latter is considered to be more severe as it may lead to damaging consequences, and the former  can be mitigated in short-term. Different types of mis-classifications incur different costs. When different misclassification costs are assigned to different classes, it can skew probability estimates of a classifier model, which may adjust its decision boundary to minimize overall cost. This can potentially lead to uncalibrated predictions of categories. Hence, prediction confidence is as important as the (point) prediction itself. Cost-sensitive learning is when the model (e.g. logistic regression) is trained with a cost function that assigns a higher cost to misclassifying the minority class. 
  
