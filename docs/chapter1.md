@@ -151,11 +151,11 @@ Area under the curve is AUC, the ROC-AUC summarizes sensitivity and specificity,
 
 ![auc](https://github.com/user-attachments/assets/71867635-e53e-4bb7-b30c-92c0911eaf17)
 
-A random classifier has AUC = 0.5 in the ROC curve. 
+A random classifier has AUC = 0.5 in the ROC curve. A presion-recall curve in addition to ROC curve is useful for explainability.
 
 <img width="263" height="220" alt="pr" src="https://github.com/user-attachments/assets/6e7f04b4-c074-41ab-ab3a-d5a66d706749" />
 
-A presion-recall curve in addition to ROC curve helps for explainability. The ROC analysis helps in interpretations and selection of optimal models and discard suboptimal ones independently from the class distribution.  
+While the ROC curve is recall *vs.* fallout, a precision-recall curve as the name suggests is a precision vs. recall or sensitivity. The ROC analysis helps in interpretations and selection of optimal models and discard suboptimal ones independently from the class distribution.  
 
 
 ### Accuracy
