@@ -141,6 +141,18 @@ This score is a harmonic mean of recall and precision and manages the trade-off 
 
 It is most worthwhile to choose a metric based on the business problem we are solving because there are always trade-offs. The metric selection must be based on how much trade-off the business allows. Detection (or not) of a true effect is related in a natural way to the cost analysis of diagnostic decision-making.
 
+---
+
+A little know-how in here would be to comprehend that y introducing an exponent in the mathematical expression of 'mean' making it a 'generalized mean', one can arrive at an entire spectrum of 'means'. 
+
+<img width="254" height="58" alt="mm" src="https://github.com/user-attachments/assets/14c029f8-0e89-40c2-bce0-81da6a6d6a07" />
+
+For example, the exponent p=1 yields arithmetic mean and p = 2 yields root mean square or quadratic mean. We must know that numbers add up for an arithmetic mean, reciprocals of numbers add up for a harmonic mean, squares of numbers add up for a quadratic mean, and so on. 
+
+---
+
+Now let us return to our main topic 'metrics'.
+
 ### Accuracy
 
 The accuracy metric is the percentage of correct predictions that is, number of correct predictions out of all predictions.
