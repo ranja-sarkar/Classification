@@ -132,7 +132,7 @@ For example, the exponent p=1 yields arithmetic mean and p = 2 yields root mean 
 
 ---
 
-Now let us return to our main topic 'metrics'.
+Let us return to 'metrics'.
 
 ### ROC curve
 
