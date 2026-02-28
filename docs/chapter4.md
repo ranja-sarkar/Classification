@@ -63,3 +63,18 @@ A calibration curve or reliability curve is a graphical representation of the ca
 
 The calibration curve plots the mean predicted probability against the true fraction of positive samples. A perfectly calibrated model follows a diagonal line, where the x-axis represents the model’s predicted probability and the y-axis shows the (actual) fraction of positive samples for each probability bin, where binning can be equal-width or equal-frequency.
 
+## Brier score
+
+It measures the mean squared difference between the predicted probability and the actual outcome for a number of instances. A lower Brier score indicates better calibration, with a perfect score of 0 indicating that the model’s predictions align perfectly with the actual outcomes.
+
+## Log loss
+
+It evaluates the match of predicted probability with the true (binary) outcome. A lower log-loss value indicates better calibration, with the ideal score being zero.
+
+
+It is also known as the (binary) cross-entropy, the loss function to optimize logistic regression. 
+
+# Summary
+
+It is essential to select the optimal model for the given dataset first and then calibrate it. If the data distribution changes over time, the model must be recalibrated periodically. The calibration curves become very important, the visualization helps understand the adjustments to the model's probabilistic outputs. It is not that Platt scaling and isotonic regression methods are helpful at all times - if the relationship between predicted and true probabiities is non-monotonic in nature, we would not be able to calibrate the model accurately with these methods.  
+
