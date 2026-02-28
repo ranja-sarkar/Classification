@@ -8,7 +8,10 @@ nav_order: 1
 
 ---
 
-This is a prologue to the book.
+This is a prologue to the book. 
+
+<img width="302" height="173" alt="pic" src="https://github.com/user-attachments/assets/0f24e193-5d25-4c33-addf-7286f0a260bb" />
+
 
 This book is a fundamental one and has 5 chapters namely,
 
@@ -18,8 +21,8 @@ This book is a fundamental one and has 5 chapters namely,
 
 [Chapter 3](https://ranja-sarkar.github.io/Classification/docs/chapter3): **Assessing Classifier**
 
-[CHapter 4](https://ranja-sarkar.github.io/Classification/docs/chapter4): **Calibrating Classifier**
+[Chapter 4](https://ranja-sarkar.github.io/Classification/docs/chapter4): **Calibrating Classifier**
 
-[CHapter 5](https://ranja-sarkar.github.io/Classification/docs/chapter5): **Epilogue**
+[Chapter 5](https://ranja-sarkar.github.io/Classification/docs/chapter5): **Epilogue**
 
 
