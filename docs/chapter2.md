@@ -19,3 +19,17 @@ The confusion matrix of a binary-class classifier is simple, the predicted class
 
 ![BCM](https://github.com/user-attachments/assets/c69eff54-a544-4abd-aa95-756bc11e4031)
 ![3CM](https://github.com/user-attachments/assets/a601662e-e7c1-44b3-9333-3229203d2081)
+
+For example, if we consider 3 viz., A, B, and C classes, we would train one classifier for each of:
+1. A vs. (B or C)
+2. B vs. (A or C)
+3. C vs. (A or B)
+
+In other words, the first classifier would predict whether a given point is more likely to be in A or in one of B and C, and similarly for the second and third classifiers. 
+
+The macro-average scores are calculated for each class individually, and then the (unweighted) mean of the measures is calculated to obtain net global score. The weighted-average scores take a sample-weighted mean of the class-wise scores. 
+
+
+# Summary
+
+The confusion matrix is a succinct way of having deeper information about a classifier which is computed by mapping the actual (or expected) values to the predicted outcomes of the model.
