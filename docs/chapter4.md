@@ -16,3 +16,4 @@ A classifier’s outcome with calibrated probability must match the true probabi
 
 For example, if a calibrated classifier model assigns a probability of 0.6 to class 1 in 100 samples, 60 of those samples must truly belong to class 1. In effect, the predictions or probability estimates returned by the classifier should reflect the true occurrences (likelihood) and if they do not, they ought to be corrected by calibration.
 
+![c0](https://github.com/user-attachments/assets/74e5f01a-90b0-4400-9891-66281bb7fefa)
