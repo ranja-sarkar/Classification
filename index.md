@@ -8,4 +8,14 @@ nav_order: 1
 
 ---
 
-This book contains fundamental chapters about classification, namely binary classification, multiclass classification, assessment or evaluation of classifiers, calibrating them and why calibration is necessary. The concluding chapter looks beyond traditional classification models. 
+This book is a fundamental one and has 5 chapters namely,
+
+[Chapter 1](https://ranja-sarkar.github.io/Classification/docs/chapter1): **Binary Classification**
+
+[Chapter 2](https://ranja-sarkar.github.io/Classification/docs/chapter2): **Multiclass Classification**
+
+[Chapter 3](https://ranja-sarkar.github.io/Classification/docs/chapter3): **Assessing Classifier**
+
+[CHapter 4](https://ranja-sarkar.github.io/Classification/docs/chapter4): **Calibrating Classifier**
+
+[CHapter 5](https://ranja-sarkar.github.io/Classification/docs/chapter5): **Epilogue**. 
