@@ -8,6 +8,8 @@ nav_order: 1
 
 ---
 
+This is a prologue to the book.
+
 This book is a fundamental one and has 5 chapters namely,
 
 [Chapter 1](https://ranja-sarkar.github.io/Classification/docs/chapter1): **Binary Classification**
@@ -18,4 +20,6 @@ This book is a fundamental one and has 5 chapters namely,
 
 [CHapter 4](https://ranja-sarkar.github.io/Classification/docs/chapter4): **Calibrating Classifier**
 
-[CHapter 5](https://ranja-sarkar.github.io/Classification/docs/chapter5): **Epilogue**. 
+[CHapter 5](https://ranja-sarkar.github.io/Classification/docs/chapter5): **Epilogue**
+
+
