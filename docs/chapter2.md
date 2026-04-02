@@ -12,6 +12,8 @@ parent: Overview
 
 ---
 
+# Chapter: Multiclass Classification
+
 To interpret the outcomes of a multiclass classifier model, it is in general the one-vs-all or one-vs-rest strategy that we take. If there are N classes in the target of the dataset, N binary classifiers are trained, each focusing on distinguishing one class from the rest. 
 
 
