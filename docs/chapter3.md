@@ -12,7 +12,7 @@ parent: Overview
 
 ---
 
-#Chapter: Assessing Classifier
+# Chapter: Assessing Classifier
 
 Assessing classifier models requires careful considerations. What the classifier outputs is a probability and the classification threshold is a value we use to translate this probability into (discrete) output or binary categories in case of a binary classification and multi-categories in case of multiclass classification. The probability is compared with the threshold value which is used to bin values into distinct categories. 
 
