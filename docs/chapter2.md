@@ -1,8 +1,8 @@
 ---
 
-title: Multiclass classification
+title: Multiclass & Multilabel classification
 
-description: Multiclass classification
+description: Multiclass & Multilabel classification
 
 layout: default
 
@@ -13,6 +13,8 @@ parent: Overview
 ---
 
 # Chapter: Multiclass Classification
+
+## Multiclass classifiers
 
 To interpret the outcomes of a multiclass classifier model, it is in general the one-vs-all or one-vs-rest strategy that we take. If there are N classes in the target of the dataset, N binary classifiers are trained, each focusing on distinguishing one class from the rest. 
 
@@ -30,6 +32,9 @@ For example, if we consider 3 viz., A, B, and C classes, we would train one clas
 In other words, the first classifier would predict whether a given point is more likely to be in A or in one of B and C, and similarly for the second and third classifiers. 
 
 The macro-average scores are calculated for each class individually, and then the (unweighted) mean of the measures is calculated to obtain net global score. The weighted-average scores take a sample-weighted mean of the class-wise scores. 
+
+## Multilabel classifiers
+
 
 
 # Summary
