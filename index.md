@@ -20,14 +20,14 @@ We fit a supervised machine learning model to data to classify data by performin
 
 This book has 5 chapters namely,
 
-[Chapter 1](https://ranja-sarkar.github.io/Classification/docs/chapter1): **Binary Classification**
+[Chapter 1](): **Binary Classification**
 
-[Chapter 2](https://ranja-sarkar.github.io/Classification/docs/chapter2): **Multiclass Classification**
+[Chapter 2](): **Multiclass & Multilabel Classification**
 
-[Chapter 3](https://ranja-sarkar.github.io/Classification/docs/chapter3): **Assessing Classifier**
+[Chapter 3](): **Assessing Classifier**
 
-[Chapter 4](https://ranja-sarkar.github.io/Classification/docs/chapter4): **Calibrating Classifier**
+[Chapter 4](): **Calibrating Classifier**
 
-[Chapter 5](https://ranja-sarkar.github.io/Classification/docs/chapter5): **Epilogue**
+[Chapter 5](): **Epilogue**
 
 
