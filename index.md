@@ -14,11 +14,13 @@ nav_order: 1
 
 # Prologue
 
-Classification in machine learning has evolved from the statistical and rule-based era around 1950s to SVMs and ensemble methods in the 1990s to the modern deep learning era. With advanced architectures such as that of transformers, it has further evolved for sequential data and natural language processing. The historical progression has been far-reaching, from linear regression and foundational pattern recognition, early perceptrons (simple neural networks) emerging for binary classification tasks to CNNs and RNNs for multiclass and nultilabel classification.
+Classification in machine learning has evolved from the statistical and rule-based era around 1950s to SVMs and ensemble methods in the 1990s to the modern deep learning era. With advanced architectures such as that of transformers, it has further evolved for sequential data and natural language processing. The historical progression has been far-reaching, from linear regression and foundational pattern recognition, early perceptrons (simple neural networks) emerging for binary classification tasks to CNNs and RNNs for multiclass and multilabel classification.
 
 We fit a supervised machine learning model to data to classify data by performing regression. The target in the dataset is typically binary, meaning the class labels are 1/0 or YES/NO and the outcome of regression is probability values. The probabilities are converted into the class labels based on the classification or probability threshold. This is set to 0.5 for a dataset with balanced classes. The probability values need posthoc calibration, discussed in chapter 4 of the book. 
 
-In present times, convolutional and recurrent neural networks that is CNNs and RNNs have revolutionized image and sequential data classification. While often associated with generative AI, transformers have significantly advanced text and sequential data classification through self-attention mechanism.  
+In present times, convolutional and recurrent neural networks that is, CNNs and RNNs have revolutionized image and sequential data classification, discussed in chapter 2 of the book. While often associated with generative AI, transformers have significantly advanced text and sequential data classification through self-attention mechanism.  
+
+The current era is dominated by deep neural networks that automatically perform feature engineering, identifying complex patterns.  While primarily known for large language models (LLMs), underlying transformer-based architectures lead in multi-modal classification, identifying relationships across text, images, and audio. There is little human intervention in the artificial intelligence (AI) era, but more concern in ethics, transparency, and fairness. We discuss this and look ahead in the last chapter of the book. 
 
 # Chapters
 
